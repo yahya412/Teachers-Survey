@@ -5,6 +5,5 @@
         </h2>
     </x-slot>
 welcome you are logged in!!
-     <!-- <livewire:summary /> -->
-     <!-- <livewire:summary-details /> -->
+ 
 </x-app-layout>
