@@ -1,0 +1,11 @@
+select users.id,users.name,urls.url,urls.section,urls.date,questions.count(url_id) from users , urls ,questions where  users.id=urls.user_id and urls.id=questions.url_id group by urls.url;
+
+
+
+
+select users.name,urls.id,urls.url,urls.section,urls.date  from users  inner join urls on users.id=urls.user_id;
+
+select url_id,count(*) as count from questions group by url_id;
+
+
+select users.name,urls.id,urls.url,urls.section,urls.date,:questions.count(*) as count from users  inner join urls on users.id=urls.user_id join questions on urls.id=questions.url_id; 
