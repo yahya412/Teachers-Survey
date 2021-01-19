@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Models\Question;
 
 class SummaryController extends Controller
 {
@@ -115,9 +116,10 @@ class SummaryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function comment($id)
     {
-        //
+        $comments=Question::where('url_id',$id)->get();
+        return view('summary.comments',compact('comments',$comments));
     }
 
     /**

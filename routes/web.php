@@ -39,7 +39,7 @@ Route::get('/controller/{id}',[Control::class,'edit'])->name('url.generateurl');
 // Route::post('/users/{id}',[usersController::class,'makeUser'])->name('makeuser');
 
 
-
+Route::get('/summary/{id}/comment',[\App\Http\Controllers\SummaryController::class,'comment'])->name('summary.comment');
 Route::get('/users',[usersController::class,'index'])->name('users');
 // Route::get('test',[QuestionController::class,'index']);
 Route::resource('summary', \App\Http\Controllers\SummaryController::class);

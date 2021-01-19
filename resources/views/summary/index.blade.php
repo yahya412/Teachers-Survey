@@ -66,7 +66,7 @@
 
                                         <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
                                             <a href="{{ route('summary.show', $data->id) }}" class="text-blue-600 hover:text-blue-900 mb-2 mr-2"> show</a>
-                                            <a href="#" class="text-indigo-600 hover:text-indigo-900 mb-2 mr-2">route('users.edit', $user->id)</a>
+                                            <a href="{{route('summary.comment', $data->id)}}" class="text-indigo-600 hover:text-indigo-900 mb-2 mr-2">Comments</a>
                                             <form class="inline-block" action="#" method="POST" onsubmit="return confirm('Are you sure?');">
                                                 <input type="hidden" name="_method" value="DELETE">
                                                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
