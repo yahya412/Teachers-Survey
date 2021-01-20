@@ -12,7 +12,7 @@
                 <a href="{{route('summary.index')}}" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Main Page</a>
             </div>
     <div class="row ">
-        <div class="col-6 col-md-6 col-sm-6" style="width:60%; display:inline-table;" >
+        
         <table style="width:60% " class="table table-striped table-bordered table-res">
   <tr>
     
@@ -21,21 +21,21 @@
    </tr>   
 
    
-   <tr>يعرض الاستاذ المراجع الاساسية للمقرر على الطلاب في بداية الفصل الدراسي؟</tr>
-   <tr>يعرض الاستاذ اهداف المقرر على الطلاب في أول محاضرة؟</tr>
-   <tr>ينفذ الاستاذ خطة المقرر كما خطط لها في بداية الفصل الدراسي؟</tr>
-   <tr>تبداء المحاضرة وتنتهي في موعدها المحدد؟</tr>
-   <tr>طريقة تدريس المقرر تحفز الطلاب على المشاركة وابداء الرأي؟</tr>
-   <tr>تتناسب اسئلة الاختبارات مع طريقة وأسلوب المدرس؟</tr>
-   <tr>يسمح استاذ المقرر بمراجعة الطلاب لنتائج اختبارتهم؟</tr>
-   <tr>استاذ المقرر متمكن من مادة العلمية؟</tr>
-   <tr>يبداء استاذ المقرر وينتهي بنفس الدرجة من النشاط والحيوية؟</tr>
-   <tr>اشعر بالرضى بشكل عام على استاذ المقرر؟</tr>
+   <tr><td>يعرض الاستاذ المراجع الاساسية للمقرر على الطلاب في بداية الفصل الدراسي؟</td></tr>
+   <tr><td>يعرض الاستاذ اهداف المقرر على الطلاب في أول محاضرة؟</td></tr>
+   <tr><td>ينفذ الاستاذ خطة المقرر كما خطط لها في بداية الفصل الدراسي؟</td></tr>
+   <tr><td>تبداء المحاضرة وتنتهي في موعدها المحدد؟</td></tr>
+   <tr><td>طريقة تدريس المقرر تحفز الطلاب على المشاركة وابداء الرأي؟</td></tr>
+   <tr><td>تتناسب اسئلة الاختبارات مع طريقة وأسلوب المدرس؟</td></tr>
+   <tr><td>يسمح استاذ المقرر بمراجعة الطلاب لنتائج اختبارتهم؟</td></tr>
+   <tr><td>استاذ المقرر متمكن من مادة العلمية؟</td></tr>
+   <tr><td>يبداء استاذ المقرر وينتهي بنفس الدرجة من النشاط والحيوية؟</td></tr>
+   <tr><td>اشعر بالرضى بشكل عام على استاذ المقرر؟</td></tr>
    
    
        </table>
-       </div>
-        <table style="width:30% " class="table table-striped table-bordered table-res">
+      
+        <table style="width:29% " class="table table-striped table-bordered table-res">
   <tr>
     
     <th>Avrage</th>
@@ -53,11 +53,10 @@
         
         
             </table> 
-        </div>
+        
 
    
    
-<div class="col-6 col-md-6 col-sm-6" style="width:40%; display:inline-table;">
 <table style="width:10% " class="table table-striped table-bordered table-res">
   <tr>
     
@@ -90,7 +89,7 @@
   
 </table> 
 </div>
-</div>
+
 
 
 
