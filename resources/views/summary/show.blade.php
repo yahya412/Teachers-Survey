@@ -12,8 +12,8 @@
                 <a href="{{route('summary.index')}}" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Main Page</a>
             </div>
     <div class="row ">
-        <div class="col-6 col-md-6 col-sm-6" style="width:5%; display:inline-table;" >
-        <table style="width:25% " class="table table-striped table-bordered table-res">
+        <div class="col-6 col-md-6 col-sm-6" style="width:60%; display:inline-table;" >
+        <table style="width:60% " class="table table-striped table-bordered table-res">
   <tr>
     
     <th>Questions</th>
@@ -34,8 +34,8 @@
    
    
        </table>
-       
-        <table style="width:25% " class="table table-striped table-bordered table-res">
+       </div>
+        <table style="width:30% " class="table table-striped table-bordered table-res">
   <tr>
     
     <th>Avrage</th>
@@ -58,7 +58,7 @@
    
    
 <div class="col-6 col-md-6 col-sm-6" style="width:40%; display:inline-table;">
-<table style="width:25% " class="table table-striped table-bordered table-res">
+<table style="width:10% " class="table table-striped table-bordered table-res">
   <tr>
     
     <th>1</th>
