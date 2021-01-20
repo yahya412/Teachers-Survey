@@ -13,7 +13,7 @@
             </div>
     <div class="row ">
         
-        <table style="width:60% " class="table table-striped table-bordered table-res">
+        <table style="width:50% display: inline-block; float: left" class="table table-striped table-bordered table-res">
   <tr>
     
     <th>Questions</th>
@@ -35,7 +35,7 @@
    
        </table>
       
-        <table style="width:29% " class="table table-striped table-bordered table-res">
+        <table style="width:40% display: inline-block; float: right" class="table table-striped table-bordered table-res">
   <tr>
     
     <th>Avrage</th>
@@ -57,7 +57,7 @@
 
    
    
-<table style="width:10% " class="table table-striped table-bordered table-res">
+<table style="width:10% display: inline-block; float: left" class="table table-striped table-bordered table-res">
   <tr>
     
     <th>1</th>
