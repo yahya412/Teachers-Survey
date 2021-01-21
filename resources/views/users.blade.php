@@ -48,7 +48,7 @@
       
       </td>
        <td>
-            <a href="{{route('url.generateurl',$user->id)}}">Generate URL</a>
+            <a href="{{route('url.generateurl',$user->id)}}">Generate URLlkasjdf</a>
         </td>
          
 

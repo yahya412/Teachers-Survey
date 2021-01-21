@@ -16,7 +16,7 @@
                     {{ __('Summary') }}
                     </x-nav-link>
                    
-                    <x-nav-link :href="route('control.index')" :active="request()->routeIs('control.*')">
+                    <x-nav-link :href="route('controller.index')" :active="request()->routeIs('controller.*')">
                         {{ __('Controller') }}
                     </x-nav-link>
                 </div>

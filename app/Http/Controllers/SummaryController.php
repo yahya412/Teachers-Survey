@@ -89,14 +89,15 @@ class SummaryController extends Controller
                 ->select(
                     DB::raw($txt),
                     )->where('url_id',$this->param)->where($q,$y)->get();
+            
           }
     }
 
 
 
-
+//compact('data','data_show')
         // dump ($data);
-        return view('summary.show',compact('data','data_show'));
+        return view('summary.show',compact('data',['data_show','count']));
 
 
 

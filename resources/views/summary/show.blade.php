@@ -7,13 +7,14 @@
 
 
 
-    <div class="container-fluid">
-    <div class="block mb-8">
+    <div class="container mx-auto">
+    <div class="p-8">
                 <a href="{{route('summary.index')}}" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Main Page</a>
             </div>
-    <div class="row ">
-        
-        <table style="width:50% display: inline-block; float: left" class="table table-striped table-bordered table-res">
+    <div class="grid grid-cols-12 gap-0 inline-flex ">
+        <div class="p-0 m-0 col-span-5">
+
+        <table style="display: inline-block; float: left" class="border-collapse border border-green-800">
   <tr>
     
     <th>Questions</th>
@@ -34,8 +35,10 @@
    
    
        </table>
-      
-        <table style="width:40% display: inline-block; float: right" class="table table-striped table-bordered table-res">
+      </div>
+      <div class="p-0 m-0">
+
+        <table style="display: inline-block; float: right" class="border-collapse border border-green-800">
   <tr>
     
     <th>Avrage</th>
@@ -54,10 +57,11 @@
         
             </table> 
         
-
+</div>
+<div class="p-0 m-0">
    
    
-<table style="width:10% display: inline-block; float: left" class="table table-striped table-bordered table-res">
+<table style=" display: inline-block; float: left" class="border-collapse border border-green-800">
   <tr>
     
     <th>1</th>
@@ -77,7 +81,9 @@
   
  
     
-    <td class="text-center"> {{$n}} </td>
+    <td class="text-center"> 
+    
+    {{number_format($n/$count*100, 2, '.', ',')}}@if($n >0 )% @endif </td>
     
                      @endforeach
     
@@ -90,6 +96,7 @@
 </table> 
 </div>
 
+</div>
 
 
 

@@ -28,6 +28,7 @@
 <div class="">
     <div class="label">يعرض الاستاذ المراجع الاساسية للمقرر على الطلاب في بداية الفصل الدراسي؟</div>
     
+    <div>
     <input class="ms-2" type="radio" name="q1" value=1 {{ old('q1') == "1" ? 'checked' : '' }}><lable class="ms-5">1</lable>
     <input class="ms-2" type="radio" name="q1" value=2 {{ old('q1') == "2" ? 'checked' : '' }}><lable class="ms-5">2</lable>
     <input class="ms-2" type="radio" name="q1" value=3 {{ old('q1') == "3" ? 'checked' : '' }}><lable class="ms-5">3</lable>
@@ -36,12 +37,15 @@
     @error('q1')
     <small class="text-danger">حقل مطلوب</small>
     @enderror
+    </div>
+
     
 </div>
 <br>
 <br>
 <div class="">
     <div class="label">يعرض الاستاذ اهداف المقرر  على الطلاب في أول محاضرة؟</div>
+    <div>
     <input class="ms-2" type="radio" name="q2" value=1 {{ old('q2') == "1" ? 'checked' : '' }}><lable class="ms-5">1</lable>
     <input class="ms-2" type="radio" name="q2" value=2 {{ old('q2') == "2" ? 'checked' : '' }}><lable class="ms-5">2</lable>
     <input class="ms-2" type="radio" name="q2" value=3 {{ old('q2') == "3" ? 'checked' : '' }}><lable class="ms-5">3</lable>
@@ -50,12 +54,15 @@
     @error('q2')
     <small class="text-danger">حقل مطلوب</small>
     @enderror
+    </div>
+
 </div>
 <br>
 <br>
 <div class="">
     <div class="label">ينفذ الاستاذ خطة المقرر كما خطط لها في بداية الفصل الدراسي؟</div>
     
+    <div>
     <input class="ms-2" type="radio" name="q3" value=1 {{ old('q3') == "1" ? 'checked' : '' }}><lable class="ms-5">1</lable>
     <input class="ms-2" type="radio" name="q3" value=2 {{ old('q3') == "2" ? 'checked' : '' }}><lable class="ms-5">2</lable>
     <input class="ms-2" type="radio" name="q3" value=3 {{ old('q3') == "3" ? 'checked' : '' }}><lable class="ms-5">3</lable>
@@ -64,11 +71,14 @@
     @error('q3')
     <small class="text-danger">حقل مطلوب</small>
     @enderror
+    </div>
+
 </div>
 <br>
 <br>
 <div class="">
     <div class="label">تبداء المحاضرة وتنتهي في موعدها المحدد؟</div>
+    <div>
     <input class="ms-2" type="radio" name="q4" value=1 {{ old('q4') == "1" ? 'checked' : '' }}><lable class="ms-5">1</lable>
     <input class="ms-2" type="radio" name="q4" value=2 {{ old('q4') == "2" ? 'checked' : '' }}><lable class="ms-5">2</lable>
     <input class="ms-2" type="radio" name="q4" value=3 {{ old('q4') == "3" ? 'checked' : '' }}><lable class="ms-5">3</lable>
@@ -77,11 +87,13 @@
     @error('q4')
     <small class="text-danger">حقل مطلوب</small>
     @enderror
+    </div>
 </div>
 <br>
 <br>
 <div class="">
     <div class="label">طريقة تدريس المقرر تحفز الطلاب على المشاركة وابداء الرأي؟</div>
+    <div>
     <input class="ms-2" type="radio" name="q5" value=1 {{ old('q5') == "1" ? 'checked' : '' }}><lable class="ms-5">1</lable>
     <input class="ms-2" type="radio" name="q5" value=2 {{ old('q5') == "2" ? 'checked' : '' }}><lable class="ms-5">2</lable>
     <input class="ms-2" type="radio" name="q5" value=3 {{ old('q5') == "3" ? 'checked' : '' }}><lable class="ms-5">3</lable>
@@ -90,12 +102,14 @@
     @error('q5')
     <small class="text-danger">حقل مطلوب</small>
     @enderror
+    </div>
 </div>
 <br>
 <br>
 <div class="">
     <div class="label">تتناسب اسئلة الاختبارات مع طريقة وأسلوب المدرس؟</div>
     
+    <div>
     <input class="ms-2" type="radio" name="q6" value=1 {{ old('q6') == "1" ? 'checked' : '' }}><lable class="ms-5">1</lable>
     <input class="ms-2" type="radio" name="q6" value=2 {{ old('q6') == "2" ? 'checked' : '' }}><lable class="ms-5">2</lable>
     <input class="ms-2" type="radio" name="q6" value=3 {{ old('q6') == "3" ? 'checked' : '' }}><lable class="ms-5">3</lable>
@@ -104,11 +118,13 @@
     @error('q6')
     <small class="text-danger">حقل مطلوب</small>
     @enderror
+    </div>
 </div>
 <br>
 <br>
 <div class="">
     <div class="label">يسمح استاذ المقرر بمراجعة الطلاب لنتائج اختبارتهم؟</div>
+    <div>
     <input class="ms-2" type="radio" name="q7" value=1 {{ old('q7') == "1" ? 'checked' : '' }}><lable class="ms-5">1</lable>
     <input class="ms-2" type="radio" name="q7" value=2 {{ old('q7') == "2" ? 'checked' : '' }}><lable class="ms-5">2</lable>
     <input class="ms-2" type="radio" name="q7" value=3 {{ old('q7') == "3" ? 'checked' : '' }}><lable class="ms-5">3</lable>
@@ -117,12 +133,14 @@
     @error('q7')
     <small class="text-danger">حقل مطلوب</small>
     @enderror
+    </div>
 </div>
 <br>
 <br>
 <div class="">
     <div class="label">استاذ المقرر متمكن من مادة العلمية؟</div>
     
+    <div>
     <input class="ms-2" type="radio" name="q8" value=1 {{ old('q8') == "1" ? 'checked' : '' }}><lable class="ms-5">1</lable>
     <input class="ms-2" type="radio" name="q8" value=2 {{ old('q8') == "2" ? 'checked' : '' }}><lable class="ms-5">2</lable>
     <input class="ms-2" type="radio" name="q8" value=3 {{ old('q8') == "3" ? 'checked' : '' }}><lable class="ms-5">3</lable>
@@ -131,12 +149,14 @@
     @error('q8')
     <small class="text-danger">حقل مطلوب</small>
     @enderror
+    </div>
 </div>
 <br>
 <br>
 <div class="">
     <div class="label">يبداء استاذ المقرر وينتهي بنفس الدرجة من النشاط والحيوية؟</div>
     
+    <div>
     <input class="ms-2" type="radio" name="q9" value=1 {{ old('q9') == "1" ? 'checked' : '' }}><lable class="ms-5">1</lable>
     <input class="ms-2" type="radio" name="q9" value=2 {{ old('q9') == "2" ? 'checked' : '' }}><lable class="ms-5">2</lable>
     <input class="ms-2" type="radio" name="q9" value=3 {{ old('q9') == "3" ? 'checked' : '' }}><lable class="ms-5">3</lable>
@@ -145,12 +165,14 @@
     @error('q9')
     <small class="text-danger">حقل مطلوب</small>
     @enderror
+    </div>
 </div>
 <br>
 <br>
 <div class="">
     <div class="label">اشعر بالرضى بشكل عام على استاذ المقرر؟</div>
     
+    <div>
     <input class="ms-2" type="radio" name="q10" value=1 {{ old('q10') == "1" ? 'checked' : '' }}><lable class="ms-5">1</lable>
     <input class="ms-2" type="radio" name="q10" value=2 {{ old('q10') == "2" ? 'checked' : '' }}><lable class="ms-5">2</lable>
     <input class="ms-2" type="radio" name="q10" value=3 {{ old('q10') == "3" ? 'checked' : '' }}><lable class="ms-5">3</lable>
@@ -159,6 +181,7 @@
     @error('q10')
     <small class="text-danger">حقل مطلوب</small>
     @enderror
+    </div>
 </div>
 <br>
 <br>

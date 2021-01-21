@@ -5,29 +5,26 @@
         </h2>
     </x-slot>
 
-    <div>
-         
- 
-        <div class="max-w-6xl mx-auto py-10 sm:px-6 lg:px-8">
-           
-            <div class="flex flex-col">
-                <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
-                    <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
-                        <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
-                        <div class="card">
-                        <div class="card-head">URL</div>
-                        <div class="card-body">
-                        
-                        {{$fullUrl}}  
-                        </div>
-                        
-                        </div>                       
-                        </div>
-                    </div>
-                </div>
+  <!-- component -->
+<div class="flex items-center h-screen w-full justify-center">
+
+<div class="max-w-xs">
+    <div class="bg-white shadow-xl rounded-lg py-3">
+        
+        <div class="p-2">
+            <h3 class="text-center text-xl text-gray-900 font-medium leading-8">URL has been Generated</h3>
+            <div class="text-center text-gray-400 text-xs font-semibold">
+               
             </div>
+            <td class="px-2 py-2  font-semibold"><a href="{{$fullUrl}}">{{$fullUrl}}</a></td>
+
+           
+
+            
 
         </div>
     </div>
+</div>
 
+</div>
 </x-app-layout>

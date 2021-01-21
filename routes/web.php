@@ -43,7 +43,7 @@ Route::get('/summary/{id}/comment',[\App\Http\Controllers\SummaryController::cla
 Route::get('/users',[usersController::class,'index'])->name('users');
 // Route::get('test',[QuestionController::class,'index']);
 Route::resource('summary', \App\Http\Controllers\SummaryController::class);
-Route::resource('control', \App\Http\Controllers\Control::class);
+Route::resource('controller', \App\Http\Controllers\Control::class);
 Route::post('/users/{id}',[Control::class,'makeAdmin'])->name('users.makeadmin');
 // Route::group(['middleware' => 'auth'], function () {
 //     Route::resource('summary', \App\Http\Controllers\SummaryController::class);
@@ -51,7 +51,7 @@ Route::post('/users/{id}',[Control::class,'makeAdmin'])->name('users.makeadmin')
 //     Route::resource('users', \App\Http\Controllers\UsersController::class);
 // });
 
-Route::get('/controller',Controller::class)->name('livewire.controller');
+// Route::get('/controller',Controller::class)->name('livewire.controller');
 Route::get('test',function(){
     
     $param=1;

@@ -20,7 +20,7 @@
 <thead >
 <tr>
 <th class="w-1/2 ...">Name</th>
-<th class="w-1/4 ...">Generate Link</th>
+<th class="w-1/4 ...">Generate sadfasflkj Link</th>
 <th class="w-1/4 ...">Make Admin</th>
 </tr>
 </thead>

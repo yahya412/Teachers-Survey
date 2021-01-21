@@ -6,12 +6,16 @@ use Illuminate\Http\Request;
 use App\Models\Question;
 use App\Models\Url;
 use App\Models\User;
+use Carbon\Carbon;
+
 class questionsController extends Controller
 {
     public $url;
     public function form($u)
     {
-        $u1=Url::where('url','=',$u)->first();
+        // print_r(Carbon::today()->toDateString());
+        $u1=Url::where('url','=',$u)->whereDate('date','=', Carbon::today()->toDateString())->first();
+        abort_if(!$u1, 419);
         $this->url=$u1;
 
        return view('form',compact('u1'));
