@@ -36,19 +36,19 @@
     @if ($user->role===0)
     <form action="{{route('users.makeadmin',$user->id)}}" method="post">
     @csrf
-    <button type="submit">Make Admin</button>
+    <button type="submit" class="border border-gray-200 bg-gray-200 text-gray-700 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-300 focus:outline-none focus:shadow-outline">Make Admin</button>
     </form>
     @endif
     @if($user->role===1)
     <form action="{{route('users.makeadmin',$user->id)}}" method="post">
     @csrf
-    <button type="submit">Make User</button>
+    <button type="submit" class="border border-gray-200 bg-gray-200 text-gray-700 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-300 focus:outline-none focus:shadow-outline">Make User</button>
     </form>
     @endif
 
 </td>
 <td>
-    <a href="{{route('url.generateurl',$user->id)}}">Generate URL</a>
+    <a href="{{route('url.generateurl',$user->id)}}" class="border border-gray-200 bg-gray-200 text-gray-700 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-300 focus:outline-none focus:shadow-outline">Generate URL</a>
 </td>
  
 

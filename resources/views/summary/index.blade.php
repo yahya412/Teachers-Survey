@@ -63,8 +63,8 @@
                                         </td>
 
                                         <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
-                                            <a href="{{ route('summary.show', $data->id) }}" class="text-blue-600 hover:text-blue-900 mb-2 mr-2"> show</a>
-                                            <a href="{{route('summary.comment', $data->id)}}" class="text-indigo-600 hover:text-indigo-900 mb-2 mr-2">Comments</a>
+                                            <a href="{{ route('summary.show', $data->id) }}" class="border border-gray-200 bg-gray-200 text-gray-700 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-300 focus:outline-none focus:shadow-outline"> show</a>
+                                            <a href="{{route('summary.comment', $data->id)}}" class="border border-gray-200 bg-gray-200 text-gray-700 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-300 focus:outline-none focus:shadow-outline">Comments</a>
                                 
                                         </td>
                                     </tr>

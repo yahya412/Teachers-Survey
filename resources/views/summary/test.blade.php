@@ -1,36 +1,17 @@
 <x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-           Survey Details
-        </h2>
-    </x-slot>
-
-
-
-    <div class="container mx-auto">
-    <div class="p-8 flex">
-                <div>
-                <a href="{{route('summary.index')}}" class="w-full py-3 mt-10 bg-gray-800 rounded-sm
-                    font-medium text-white uppercase
-                    focus:outline-none hover:bg-gray-700 hover:shadow-none">Main Page</a>
-                    </div>
-                    <div class ="px-8">
-            Survey Counts ={{$count}} 
-            </div>
-            </div>
-   
+ 
 <div class="p-0 m-0 flex justify-center">
   
    
   <div>
    <table  class="table-fixed">
      <tr>
-       <th>لا أوافق بشدة</th>
-       <th>لا أوافق</th>
-       <th>صحيح لحد ما</th>
-       <th>أوافق</th>
-       <th>أوافق بشدة</th>
-       <th>معدل</th>
+       <th>1</th>
+       <th>2</th>
+       <th>3</th>
+       <th>4</th>
+       <th>5</th>
+       <th>avrage</th>
 
       </tr>
    

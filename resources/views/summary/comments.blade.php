@@ -7,8 +7,11 @@
     <div>
     <div class="max-w-6xl mx-auto py-10 sm:px-6 lg:px-8">
             <div class="block mb-8">
-                <a href="{{route('summary.index')}}" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Main Page</a>
+                <a href="{{route('summary.index')}}" class="w-full py-3 mt-10 bg-gray-800 rounded-sm
+                    font-medium text-white uppercase
+                    focus:outline-none hover:bg-gray-700 hover:shadow-none">Main Page</a>
             </div>
+            
             <div class="flex flex-col">
                 <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
                     <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
@@ -23,7 +26,7 @@
                             @foreach($comments as $comment)
                             
                             
-                            &bull; {{$comment->qn}}<br>
+                            {{ $loop->iteration }} - {{$comment->qn}}<br>
                             
 
                             @endforeach
